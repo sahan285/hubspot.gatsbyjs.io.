@@ -1,0 +1,23 @@
+dig exceptions-eu1.hubspot.com 
+
+; <<>> DiG 9.20.8-6-Debian <<>> exceptions-eu1.hubspot.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 10788
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;exceptions-eu1.hubspot.com.    IN      A
+
+;; ANSWER SECTION:
+exceptions-eu1.hubspot.com. 164 IN      CNAME   exceptions-fra04-origin.spectrum.hubspot.com.
+exceptions-fra04-origin.spectrum.hubspot.com. 164 IN CNAME 6caffd52e6a14346a14e2eb4ae24b775.pacloudflare.com.
+6caffd52e6a14346a14e2eb4ae24b775.pacloudflare.com. 164 IN A 172.65.221.131
+
+;; Query time: 67 msec
+;; SERVER: 192.168.8.1#53(192.168.8.1) (UDP)
+;; WHEN: Thu May 15 10:15:30 EDT 2025
+;; MSG SIZE  rcvd: 192
+
