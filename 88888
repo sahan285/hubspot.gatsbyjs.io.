@@ -1,0 +1,21 @@
+dig masking.casted.us
+
+; <<>> DiG 9.20.8-6-Debian <<>> masking.casted.us
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42571
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;masking.casted.us.             IN      A
+
+;; ANSWER SECTION:
+masking.casted.us.      95      IN      A       35.231.1.101
+
+;; Query time: 48 msec
+;; SERVER: 192.168.8.1#53(192.168.8.1) (UDP)
+;; WHEN: Thu May 15 15:26:13 EDT 2025
+;; MSG SIZE  rcvd: 62
+
