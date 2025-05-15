@@ -1,0 +1,22 @@
+dig listen.hubspot.com    
+
+
+; <<>> DiG 9.20.8-6-Debian <<>> listen.hubspot.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22458
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;listen.hubspot.com.            IN      A
+
+;; ANSWER SECTION:
+listen.hubspot.com.     300     IN      CNAME   masking.casted.us.
+masking.casted.us.      300     IN      A       35.231.1.101
+
+;; Query time: 271 msec
+;; SERVER: 192.168.8.1#53(192.168.8.1) (UDP)
+;; WHEN: Thu May 15 10:14:29 EDT 2025
+;; MSG SIZE  rcvd: 94
